@@ -18,8 +18,8 @@ const config = merge(base, {
 
     devServer: {
         contentBase: options.paths.output.docs,
-        host: '0.0.0.0',
-        port: 9000,
+        host: '127.0.0.1',
+        port: 8080,
         historyApiFallback: true,
         noInfo: true
     }
