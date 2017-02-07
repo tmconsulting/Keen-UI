@@ -1,3 +1,4 @@
+import OnePage from './pages/OnePage.vue';
 import UiAlert from './pages/UiAlert.vue';
 import UiAutocomplete from './pages/UiAutocomplete.vue';
 import UiButton from './pages/UiButton.vue';
@@ -32,6 +33,12 @@ const menu = [
     {
         title: 'Components',
         menu: [
+            {
+                path: '/onepage',
+                component: OnePage,
+                title: 'One Page',
+                sourceUrl: ''
+            },
             {
                 path: '/ui-alert',
                 component: UiAlert,
