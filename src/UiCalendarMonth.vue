@@ -173,7 +173,7 @@ export default {
 
     span {
         align-items: center;
-        color: $secondary-text-color;
+        color: $tmc-secondary-text;
         display: flex;
         font-size: rem-calc(14px);
         height: $ui-calendar-cell-size;

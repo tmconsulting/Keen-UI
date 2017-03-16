@@ -353,17 +353,17 @@ $ui-slider-height                   : rem-calc(18px) !default;
 
 // Track line
 $ui-slider-track-height             : rem-calc(3px) !default;
-$ui-slider-track-fill-color         : $brand-primary-color !default;
+$ui-slider-track-fill-color         : $tmc-primary-text !default;
 $ui-slider-track-background-color   : rgba(black, 0.12) !default;
 
 // Drag thumb
 $ui-track-thumb-size                : rem-calc(14px) !default;
-$ui-track-thumb-fill-color          : $brand-primary-color !default;
+$ui-track-thumb-fill-color          : $tmc-primary !default;
 
 // Focus ring
 $ui-track-focus-ring-size                   : rem-calc(36px) !default;
 $ui-track-focus-ring-transition-duration    : 0.2s !default;
-$ui-track-focus-ring-color                  : rgba($ui-track-thumb-fill-color, 0.38) !default;
+$ui-track-focus-ring-color                  : rgba($tmc-secondary-text, 0.38) !default;
 
 // Marker
 $ui-slider-marker-size                      : rem-calc(36px);

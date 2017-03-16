@@ -547,7 +547,7 @@ export default {
         display: inline-flex;
 
         &.has-white-icon-buttons {
-            background-color: $md-blue;
+            background-color: $tmc-primary;
             padding: rem-calc(4px 8px);
         }
     }

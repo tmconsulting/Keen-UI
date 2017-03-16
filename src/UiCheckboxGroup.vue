@@ -212,11 +212,11 @@ export default {
 
     &.is-invalid {
         .ui-checkbox-group__label-text {
-            color: $ui-input-label-color--invalid;
+            color: $tmc-invalid;
         }
 
         .ui-checkbox-group__feedback {
-            color: $ui-input-feedback-color--invalid;
+            color: $tmc-invalid;
         }
     }
 

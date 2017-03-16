@@ -361,7 +361,7 @@ export default {
         &:hover:not(.is-disabled),
         &.has-focus-ring.is-active,
         body[modality="keyboard"] &.is-active {
-            background-color: darken($md-grey-200, 7.5%);
+            background-color: darken($tmc-default, 7.5%);
         }
 
         .ui-ripple-ink__ink {
@@ -369,7 +369,7 @@ export default {
         }
 
         .ui-fileupload__icon {
-            color: $secondary-text-color;
+            color: $tmc-secondary-text;
         }
     }
 
@@ -383,22 +383,22 @@ export default {
     }
 
     &.ui-fileupload--color-primary {
-        background-color: $brand-primary-color;
+        background-color: $tmc-primary;
 
         &:hover:not(.is-disabled),
         &.has-focus-ring.is-active,
         body[modality="keyboard"] &.is-active {
-            background-color: darken($brand-primary-color, 10%);
+            background-color: darken($tmc-primary, 10%);
         }
     }
 
     &.ui-fileupload--color-accent {
-        background-color: $brand-accent-color;
+        background-color: $tmc-accent;
 
         &:hover:not(.is-disabled),
         &.has-focus-ring.is-active,
         body[modality="keyboard"] &.is-active {
-            background-color: darken($brand-accent-color, 10%);
+            background-color: darken($tmc-accent, 10%);
         }
     }
 }
@@ -413,19 +413,19 @@ export default {
     }
 
     &.ui-fileupload--color-default {
-        color: $primary-text-color;
+        color: $tmc-primary;
 
         .ui-fileupload__icon {
-            color: $secondary-text-color;
+            color: $tmc-secondary-text;
         }
     }
 
     &.ui-fileupload--color-primary {
-        color: $brand-primary-color;
+        color: $tmc-primary;
     }
 
     &.ui-fileupload--color-accent {
-        color: $brand-accent-color;
+        color: $tmc-accent;
     }
 }
 </style>

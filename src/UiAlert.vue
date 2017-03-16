@@ -86,7 +86,7 @@ export default {
 <style lang="scss">
 @import './styles/imports';
 
-$ui-alert-color             : rgba(black, 0.75) !default;
+$ui-alert-color             : darken (tmc-primary, 0.75) !default;
 $ui-alert-font-size         : rem-calc(15px) !default;
 $ui-alert-margin-bottom     : rem-calc(16px) !default;
 
@@ -100,7 +100,6 @@ $ui-alert-margin-bottom     : rem-calc(16px) !default;
     position: relative;
     transition: margin-bottom 0.3s;
     width: 100%;
-
     a {
         text-decoration: none;
 
@@ -119,7 +118,7 @@ $ui-alert-margin-bottom     : rem-calc(16px) !default;
 
 .ui-alert__body {
     align-items: center;
-    color: $ui-alert-color;
+    color: $tmc-primary;
     display: flex;
     flex-direction: row;
     margin-bottom: 0;
@@ -149,57 +148,61 @@ $ui-alert-margin-bottom     : rem-calc(16px) !default;
 
 .ui-alert--type-info {
     .ui-alert__body {
-        background-color: rgba($md-blue, 0.12);
+        background-color: rgba($tmc-links, 0.1);
+        border-left:3px solid $tmc-links;
     }
 
     .ui-alert__icon {
-        color: $md-blue;
+        color: $tmc-links;
     }
 
     a {
-        color: $md-blue;
+        color: $tmc-links;
     }
 }
 
 .ui-alert--type-success {
     .ui-alert__body {
-        background-color: rgba($md-green, 0.12);
+        background-color: rgba($tmc-accent, 0.12);
+        border-left:3px solid $tmc-accent;
     }
 
     .ui-alert__icon {
-        color: $md-green;
+        color: $tmc-accent;
     }
 
     a {
-        color: $md-green;
+        color: $tmc-accent;
     }
 }
 
 .ui-alert--type-warning {
     .ui-alert__body {
-        background-color: rgba($md-orange, 0.12);
+        background-color: rgba($tmc-attention, 0.1);
+        border-left:3px solid $tmc-attention;
     }
 
     .ui-alert__icon {
-        color: $md-orange;
+        color: $tmc-attention;
     }
 
     a {
-        color: $md-orange;
+        color: $tmc-attention;
     }
 }
 
 .ui-alert--type-error  {
     .ui-alert__body {
-        background-color: rgba($md-red, 0.12);
+        background-color: rgba($tmc-invalid, 0.12);
+        border-left:3px solid $tmc-invalid;
     }
 
     .ui-alert__icon {
-        color: $md-red;
+        color: $tmc-invalid;
     }
 
     a {
-        color: $md-red;
+        color: $tmc-invalid;
     }
 }
 

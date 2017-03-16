@@ -63,6 +63,12 @@
                 v-model="actionColor"
             >Action color</ui-radio-group>
 
+            <ui-radio-group
+                name="border_color"
+                :options="['accent-light', 'warning', 'attention', 'invalid']"
+                v-model="borderColor"
+            >Border color</ui-radio-group>
+
             <ui-textbox
                 placeholder="Enter the duration in seconds"
                 type="number"
@@ -360,6 +366,7 @@ export default {
             action: '',
             duration: 5,
             actionColor: 'accent',
+            borderColor: 'accent-light',
             message: 'Post deleted'
         };
     },
@@ -370,6 +377,7 @@ export default {
                 message: this.message,
                 action: this.action,
                 actionColor: this.actionColor,
+                borderColor: this.borderColor,
                 duration: this.duration * 1000
             });
         }

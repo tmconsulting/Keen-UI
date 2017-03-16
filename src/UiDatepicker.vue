@@ -399,27 +399,27 @@ export default {
 
     &:hover:not(.is-disabled) {
         .ui-datepicker__label-text {
-            color: $ui-input-label-color--hover;
+            color: $tmc-primary-text;
         }
 
         .ui-datepicker__display {
-            border-bottom-color: $ui-input-border-color--hover;
+            border-bottom-color: $tmc-primary-text;
         }
 
         .ui-datepicker__dropdown-button {
-            color: $ui-input-button-color--hover;
+            color: $tmc-primary-text;
         }
     }
 
     &.is-active:not(.is-disabled) {
         .ui-datepicker__label-text,
         .ui-datepicker__icon-wrapper .ui-icon {
-            color: $ui-input-label-color--active;
+            color: $tmc-accent;
         }
 
         .ui-datepicker__display {
-            border-bottom-color: $ui-input-border-color--active;
-            border-bottom-width: $ui-input-border-width--active;
+            border-bottom-color: $tmc-accent;
+            border-bottom-width: $tmc-accent;
         }
     }
 
@@ -454,15 +454,15 @@ export default {
     &.is-invalid:not(.is-disabled) {
         .ui-datepicker__label-text,
         .ui-datepicker__icon-wrapper .ui-icon {
-            color: $ui-input-label-color--invalid;
+            color: $tmc-invalid;
         }
 
         .ui-datepicker__display {
-            border-bottom-color: $ui-input-border-color--invalid;
+            border-bottom-color: $tmc-invalid;
         }
 
         .ui-datepicker__feedback {
-            color: $ui-input-feedback-color--invalid;
+            color: $tmc-invalid;
         }
     }
 
@@ -526,7 +526,7 @@ export default {
 }
 
 .ui-datepicker__label-text {
-    color: $ui-input-label-color;
+    color: $tmc-secondary-text;
     font-size: $ui-input-label-font-size;
     line-height: $ui-input-label-line-height;
     margin-bottom: $ui-input-label-margin-bottom;
@@ -540,7 +540,7 @@ export default {
     border-bottom-color: $ui-input-border-color;
     border-bottom-style: solid;
     border-bottom-width: $ui-input-border-width;
-    color: $ui-input-text-color;
+    color: $tmc-primary;
     cursor: pointer;
     display: flex;
     font-family: $font-stack;
@@ -558,19 +558,19 @@ export default {
     flex-grow: 1;
 
     &.is-placeholder {
-        color: $hint-text-color;
+        color: $tmc-hint;
     }
 }
 
 .ui-datepicker__dropdown-button {
-    color: $ui-input-button-color;
+    color: $tmc-hint;
     font-size: $ui-input-button-size;
     margin-left: auto;
     margin-right: rem-calc(-4px);
 }
 
 .ui-datepicker__feedback {
-    color: $ui-input-feedback-color;
+    color: $tmc-hint;
     font-size: $ui-input-feedback-font-size;
     line-height: $ui-input-feedback-line-height;
     margin: 0;

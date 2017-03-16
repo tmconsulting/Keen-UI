@@ -168,10 +168,10 @@ $ui-fab-size--small     : rem-calc(40px) !default;
 
 .ui-fab--color-default {
     background-color: white;
-    color: $secondary-text-color;
+    color: $tmc-secondary-text;
 
     .ui-fab__icon {
-        color: $secondary-text-color;
+        color: $tmc-secondary-text;
     }
 
     .ui-ripple-ink__ink {
@@ -197,18 +197,18 @@ $ui-fab-size--small     : rem-calc(40px) !default;
 }
 
 .ui-fab--color-primary {
-    background-color: $brand-primary-color;
+    background-color: $tmc-primary;
 
     .ui-fab__focus-ring {
-        background-color: darken($brand-primary-color, 10%);
+        background-color: darken($tmc-primary, 10%);
     }
 }
 
 .ui-fab--color-accent {
-    background-color: $brand-accent-color;
+    background-color: $tmc-accent;
 
     .ui-fab__focus-ring {
-        background-color: darken($brand-accent-color, 10%);
+        background-color: darken($tmc-accent, 10%);
     }
 }
 </style>

@@ -104,7 +104,7 @@ export default {
     }
 
     &:not(.is-divider) {
-        color: $primary-text-color;
+        color: $tmc-primary;
         cursor: pointer;
         font-size: $ui-dropdown-item-font-size;
         font-weight: normal;
@@ -117,12 +117,12 @@ export default {
         }
 
         &.is-disabled {
-            color: $secondary-text-color;
+            color: $tmc-secondary-text;
             cursor: default;
             opacity: 0.5;
 
             .ui-menu-option__secondary-text {
-                color: $secondary-text-color;
+                color: $tmc-secondary-text;
             }
         }
     }
@@ -136,7 +136,7 @@ export default {
 }
 
 .ui-menu-option__icon {
-    color: $secondary-text-color;
+    color: $tmc-secondary-text;
     font-size: rem-calc(18px);
     margin-right: rem-calc(16px);
 }
@@ -147,7 +147,7 @@ export default {
 }
 
 .ui-menu-option__secondary-text {
-    color: $hint-text-color;
+    color: $tmc-hint;
     flex-shrink: 0;
     font-size: rem-calc(13px);
     margin-left: rem-calc(4px);

@@ -596,26 +596,26 @@ export default {
 
     &:hover:not(.is-disabled) {
         .ui-select__label-text {
-            color: $ui-input-label-color--hover;
+            color: $tmc-primary-text;
         }
 
         .ui-select__display {
-            border-bottom-color: $ui-input-border-color--hover;
+            border-bottom-color: $tmc-primary-text;
         }
 
         .ui-select__dropdown-button {
-            color: $ui-input-button-color--hover;
+            color: $tmc-primary-text;
         }
     }
 
     &.is-active:not(.is-disabled) {
         .ui-select__label-text,
         .ui-select__icon-wrapper .ui-icon {
-            color: $ui-input-label-color--active;
+            color: $tmc-accent;
         }
 
         .ui-select__display {
-            border-bottom-color: $ui-input-border-color--active;
+            border-bottom-color: $tmc-accent;
             border-bottom-width: $ui-input-border-width--active;
         }
     }
@@ -627,7 +627,7 @@ export default {
             display: table;
 
             &.is-inline {
-                color: $ui-input-label-color; // So the hover styles don't override it
+                color: $tmc-input; // So the hover styles don't override it
                 cursor: pointer;
                 transform: translateY($ui-input-label-top--inline) scale(1.1);
             }
@@ -666,15 +666,15 @@ export default {
     &.is-invalid:not(.is-disabled) {
         .ui-select__label-text,
         .ui-select__icon-wrapper .ui-icon {
-            color: $ui-input-label-color--invalid;
+            color: $tmc-invalid;
         }
 
         .ui-select__display {
-            border-bottom-color: $ui-input-border-color--invalid;
+            border-bottom-color: $tmc-invalid;
         }
 
         .ui-select__feedback {
-            color: $ui-input-feedback-color--invalid;
+            color: $tmc-invalid;
         }
     }
 
@@ -726,7 +726,7 @@ export default {
 }
 
 .ui-select__label-text {
-    color: $ui-input-label-color;
+    color: $tmc-primary-text;
     font-size: $ui-input-label-font-size;
     line-height: $ui-input-label-line-height;
     margin-bottom: $ui-input-label-margin-bottom;
@@ -740,7 +740,7 @@ export default {
     border-bottom-color: $ui-input-border-color;
     border-bottom-style: solid;
     border-bottom-width: $ui-input-border-width;
-    color: $ui-input-text-color;
+    color: $tmc-primary;
     cursor: pointer;
     display: flex;
     font-family: $font-stack;
@@ -756,12 +756,12 @@ export default {
     flex-grow: 1;
 
     &.is-placeholder {
-        color: $hint-text-color;
+        color: $tmc-hint;
     }
 }
 
 .ui-select__dropdown-button {
-    color: $ui-input-button-color;
+    color: $tmc-primary;
     font-size: $ui-input-button-size;
     margin-left: auto;
     margin-right: rem-calc(-4px);
@@ -770,7 +770,7 @@ export default {
 .ui-select__dropdown {
     background-color: white;
     box-shadow: 1px 2px 8px $md-grey-600;
-    color: $primary-text-color;
+    color: $tmc-primary-text;
     display: block;
     list-style-type: none;
     margin: 0;
@@ -786,11 +786,11 @@ export default {
 .ui-select__search-input {
     background: none;
     border: none;
-    border-bottom-color: $ui-input-border-color;
+    border-bottom-color: $tmc-hint;
     border-bottom-style: solid;
     border-bottom-width: $ui-input-border-width;
     border-radius: 0;
-    color: $ui-input-text-color;
+    color: $tmc-primary-text;
     cursor: auto;
     font-family: $font-stack;
     font-size: $ui-input-text-font-size - rem-calc(1px);
@@ -808,7 +808,7 @@ export default {
     }
 
     &:focus + .ui-select__search-icon {
-        color: $ui-input-label-color--active;
+        color: $tmc-accent;
     }
 }
 
@@ -830,7 +830,7 @@ export default {
 
 .ui-select__options {
     background-color: white;
-    color: $primary-text-color;
+    color: $tmc-primary-text;
     display: block;
     list-style-type: none;
     margin: 0;
@@ -842,14 +842,14 @@ export default {
 }
 
 .ui-select__no-results {
-    color: $secondary-text-color;
+    color: $tmc-secondary-text;
     font-size: rem-calc(14px);
     padding: rem-calc(8px 12px);
     width: 100%;
 }
 
 .ui-select__feedback {
-    color: $ui-input-feedback-color;
+    color: $tmc-secondary-text;
     font-size: $ui-input-feedback-font-size;
     line-height: $ui-input-feedback-line-height;
     margin: 0;

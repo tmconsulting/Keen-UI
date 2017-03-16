@@ -103,7 +103,7 @@ $ui-select-option-checkbox-color: rgba(black, 0.38) !default;
 
     &.is-selected {
         background-color: rgba(black, 0.05);
-        color: $brand-primary-color;
+        color: $tmc-links;
         font-weight: 500;
 
         .ui-select-option__checkbox {

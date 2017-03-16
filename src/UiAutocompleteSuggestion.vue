@@ -68,11 +68,12 @@ export default {
     padding: rem-calc(8px 12px);
 
     &:hover {
-        background-color: rgba(black, 0.06);
+        color:$tmc-links;
+        background-color: rgba(black, 0.05);
     }
 
     &.is-highlighted {
-        background-color: rgba(black, 0.1);
+        background-color: rgba(black, 0.07);
     }
 }
 

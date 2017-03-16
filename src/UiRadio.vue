@@ -131,7 +131,7 @@ $ui-radio-label-font-size       : rem-calc(16px) !default;
 
     &:hover:not(.is-disabled):not(.is-checked) {
         .ui-radio__outer-circle {
-            border: $ui-radio-stroke solid $secondary-text-color;
+            border: $ui-radio-stroke solid $tmc-hint;
         }
     }
 
@@ -191,7 +191,7 @@ $ui-radio-label-font-size       : rem-calc(16px) !default;
 }
 
 .ui-radio__inner-circle {
-    background-color: $hint-text-color;
+    background-color: $tmc-hint;
     border-radius: 50%;
     height: $ui-radio-size;
     left: 0;
@@ -244,15 +244,15 @@ $ui-radio-label-font-size       : rem-calc(16px) !default;
 .ui-radio--color-primary {
     &.is-checked:not(.is-disabled) {
         .ui-radio__outer-circle {
-            border-color: $brand-primary-color;
+            border-color: $tmc-primary;
         }
 
         .ui-radio__inner-circle {
-            background-color: $brand-primary-color;
+            background-color: $tmc-primary;
         }
 
         .ui-radio__focus-ring {
-            background-color: rgba($brand-primary-color, 0.2);
+            background-color: rgba($tmc-primary, 0.2);
         }
     }
 }
@@ -260,15 +260,15 @@ $ui-radio-label-font-size       : rem-calc(16px) !default;
 .ui-radio--color-accent {
     &.is-checked:not(.is-disabled) {
         .ui-radio__outer-circle {
-            border-color: $brand-accent-color;
+            border-color: $tmc-accent;
         }
 
         .ui-radio__inner-circle {
-            background-color: $brand-accent-color;
+            background-color: $tmc-accent;
         }
 
         .ui-radio__focus-ring {
-            background-color: rgba($brand-accent-color, 0.2);
+            background-color: rgba($tmc-accent, 0.2);
         }
     }
 }

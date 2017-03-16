@@ -23,9 +23,7 @@
                 class="ui-button__dropdown-icon"
                 v-if="hasDropdown && iconPosition !== 'right'"
             >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M6.984 9.984h10.03L12 15z"/>
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 22"><path d="M7.406 7.828L12 12.422l4.594-4.594L18 9.234l-6 6-6-6z"></path></svg>
             </ui-icon>
         </div>
 
@@ -230,7 +228,7 @@ export default {
     display: inline-flex;
     font-family: $font-stack;
     font-size: $ui-button-font-size;
-    font-weight: 500;
+    font-weight: 400;
     height: $ui-button-height;
     justify-content: center;
     letter-spacing: 0.02em;
@@ -239,8 +237,8 @@ export default {
     outline: none;
     overflow: hidden;
     padding: 0;
-    padding-left: rem-calc(16px);
-    padding-right: rem-calc(16px);
+    padding-left: rem-calc(12px);
+    padding-right: rem-calc(12px);
     position: relative;
     text-transform: uppercase;
     touch-action: manipulation; // IE
@@ -259,12 +257,12 @@ export default {
     }
 
     &.is-raised {
-        box-shadow: 0 0 2px rgba(black, 0.12), 0 2px 2px rgba(black, 0.2);
+        box-shadow: 0 0 2px rgba(32,54,88, 0.12), 0 2px 2px rgba(32,54,88, 0.2);
         transition: box-shadow 0.1s;
 
         &.has-focus-ring:focus,
         body[modality="keyboard"] &:focus {
-            box-shadow: 0 0 5px rgba(black, 0.22), 0 3px 6px rgba(black, 0.3);
+            box-shadow: 0 0 5px rgba(32,54,88, 0.22), 0 3px 6px rgba(32,54,88, 0.3);
         }
     }
 
@@ -292,7 +290,7 @@ export default {
 .ui-button__icon {
     margin-left: rem-calc(-4px);
     margin-right: rem-calc(6px);
-    margin-top: rem-calc(-2px);
+    margin-top: rem-calc(2px);
 }
 
 .ui-button__dropdown-icon {
@@ -398,14 +396,14 @@ export default {
 
 .ui-button--type-primary {
     &.ui-button--color-default {
-        background-color: $md-grey-200;
-        color: $primary-text-color;
+        background-color: $tmc-default;
+        color: $tmc-primary;
 
         &:hover:not(.is-disabled),
         &.has-dropdown-open,
         &.has-focus-ring:focus,
         body[modality="keyboard"] &:focus {
-            background-color: darken($md-grey-200, 7.5%);
+            background-color: darken($tmc-default, 7.5%);
         }
 
         .ui-ripple-ink__ink {
@@ -414,7 +412,7 @@ export default {
 
         .ui-button__icon,
         .ui-button__dropdown-icon {
-            color: $secondary-text-color;
+            color: $tmc-secondary-text;
         }
     }
 
@@ -431,24 +429,24 @@ export default {
     }
 
     &.ui-button--color-primary {
-        background-color: $brand-primary-color;
+        background-color: $tmc-primary;
 
         &:hover:not(.is-disabled),
         &.has-dropdown-open,
         &.has-focus-ring:focus,
         body[modality="keyboard"] &:focus {
-            background-color: darken($brand-primary-color, 10%);
+            background-color: darken($tmc-primary, 10%);
         }
     }
 
     &.ui-button--color-accent {
-        background-color: $brand-accent-color;
+        background-color: $tmc-accent;
 
         &:hover:not(.is-disabled),
         &.has-dropdown-open,
         &.has-focus-ring:focus,
         body[modality="keyboard"] &:focus {
-            background-color: darken($brand-accent-color, 10%);
+            background-color: darken($tmc-accent, 10%);
         }
     }
 
@@ -475,7 +473,7 @@ export default {
     }
 
     &.ui-button--color-red {
-        background-color: $md-red;
+        background-color: $tmc-invalid;
 
         &:hover:not(.is-disabled),
         &.has-dropdown-open,
@@ -497,31 +495,19 @@ export default {
     }
 
     &.ui-button--color-default {
-        color: $primary-text-color;
-
+        color: $tmc-primary;
         .ui-button__icon {
-            color: $secondary-text-color;
+            color: $tmc-secondary-text;
         }
+
     }
 
     &.ui-button--color-primary {
-        color: $brand-primary-color;
+        color: $tmc-primary;
     }
 
     &.ui-button--color-accent {
-        color: $brand-accent-color;
-    }
-
-    &.ui-button--color-green {
-        color: $md-green-600;
-    }
-
-    &.ui-button--color-orange {
-        color: $md-orange;
-    }
-
-    &.ui-button--color-red {
-        color: $md-red;
+        color: $tmc-accent;
     }
 }
 </style>

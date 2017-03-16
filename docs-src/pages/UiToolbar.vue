@@ -92,7 +92,7 @@
             <h4 class="page__demo-title">With brand</h4>
 
             <div class="page__demo-group">
-                <ui-toolbar brand="Mail App" title="Inbox">
+                <ui-toolbar brand="Mail o" title="Inbox">
                     <div slot="actions">
                         <ui-icon-button
                             color="black"
@@ -627,4 +627,5 @@ export default {
         }
     }
 }
+
 </style>

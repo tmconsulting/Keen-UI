@@ -125,7 +125,7 @@ export default {
 }
 
 .ui-close-button__focus-ring {
-    background-color: rgba(black, 0.15);
+    background-color: $tmc-hint;
     border-radius: 50%;
     left: 0;
     opacity: 0;
@@ -184,7 +184,7 @@ export default {
     body[modality="keyboard"] &:focus,
     &:hover:not(.is-disabled) {
         .ui-close-button__icon {
-            color: $primary-text-color;
+            color: $tmc-primary;
         }
     }
 
@@ -202,7 +202,7 @@ export default {
     }
 
     .ui-close-button__icon {
-        color: $secondary-text-color;
+        color: $tmc-secondary-text;
     }
 }
 </style>

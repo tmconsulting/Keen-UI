@@ -198,7 +198,7 @@ $ui-toolbar-height      : rem-calc(56px) !default;
 }
 
 .ui-toolbar--type-colored {
-    background-color: $brand-primary-color;
+    background-color: lighten($tmc-primary, 5%);
 }
 
 .ui-toolbar--type-clear {
@@ -212,7 +212,7 @@ $ui-toolbar-height      : rem-calc(56px) !default;
 // ================================================
 
 .ui-toolbar--text-color-black {
-    color: $primary-text-color;
+    color: $tmc-primary;
 
     .ui-toolbar__body {
         border-left-color: rgba(black, 0.15);

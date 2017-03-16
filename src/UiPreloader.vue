@@ -28,10 +28,10 @@ export default {
 $ui-preloader-duration  : 3s !default;
 $ui-preloader-height    : rem-calc(3px) !default;
 
-$ui-preloader-color-1   : #159756 !default; // green
-$ui-preloader-color-2   : #da4733 !default; // red
-$ui-preloader-color-3   : #3b78e7 !default; // blue
-$ui-preloader-color-4   : #fdba2c !default; // orange
+$ui-preloader-color-2   : #4A5B76 !default;
+$ui-preloader-color-3   : #8994A5 !default;
+$ui-preloader-color-1   : $tmc-primary!default;
+$ui-preloader-color-4   : #C8CDD4 !default;
 
 .ui-preloader {
     position: relative;

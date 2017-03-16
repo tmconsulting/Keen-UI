@@ -190,7 +190,7 @@ $ui-progress-determinate-transition-duration    : 0.3s !default;
 
 .ui-progress-circular--color-multi-color {
     .ui-progress-circular__determinate-path {
-        stroke: $brand-primary-color;
+        stroke: $tmc-primary;
     }
 
     .ui-progress-circular__indeterminate-path {
@@ -201,21 +201,21 @@ $ui-progress-determinate-transition-duration    : 0.3s !default;
 .ui-progress-circular--color-primary {
     .ui-progress-circular__determinate-path,
     .ui-progress-circular__indeterminate-path {
-        stroke: $brand-primary-color;
+        stroke: $tmc-primary;
     }
 }
 
 .ui-progress-circular--color-accent {
     .ui-progress-circular__determinate-path,
     .ui-progress-circular__indeterminate-path {
-        stroke: $brand-accent-color;
+        stroke: $tmc-accent;
     }
 }
 
 .ui-progress-circular--color-black {
     .ui-progress-circular__determinate-path,
     .ui-progress-circular__indeterminate-path {
-        stroke: $md-grey-900;
+        stroke: $tmc-primary;
     }
 }
 

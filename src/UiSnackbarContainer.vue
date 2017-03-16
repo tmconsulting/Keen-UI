@@ -1,6 +1,7 @@
 <template>
     <div class="ui-snackbar-container" :class="classes">
         <ui-snackbar
+            :class="borderClasses"
             :action-color="snackbar.actionColor"
             :action="snackbar.action"
             :message="snackbar.message"
@@ -45,13 +46,19 @@ export default {
         transition: {
             type: String,
             default: 'slide' // 'slide' or 'fade'
-        }
+        },
+        // like a css class => .ui-snackbar--color-accent-light
+        borderColor: {
+            type: String,
+            default: 'accent-light' // 'accent-light', 'warning', 'attention', 'invalid'
+        },
     },
 
     data() {
         return {
             queue: [],
-            snackbarTimeout: null
+            snackbarTimeout: null,
+            borderColor: 'accent-light'
         };
     },
 
@@ -60,6 +67,11 @@ export default {
             return [
                 `ui-snackbar-container--position-${this.position}`
             ];
+        },
+        borderClasses() {
+            return [
+                `ui-snackbar-container--border-color-${this.borderColor}`,
+            ]
         }
     },
 
@@ -69,6 +81,7 @@ export default {
 
     methods: {
         createSnackbar(snackbar) {
+            this.borderColor = snackbar.borderColor;
             snackbar.show = false;
             snackbar.duration = snackbar.duration || this.duration;
 
@@ -184,5 +197,19 @@ export default {
     justify-content: center;
     left: rem-calc(8px);
     right: rem-calc(8px);
+}
+.ui-snackbar-container--border-color-accent-light {
+    border-left: 3px solid $tmc-accent-light;
+}
+
+.ui-snackbar-container--border-color-invalid {
+    border-left: 3px solid $tmc-invalid;
+}
+.ui-snackbar-container--border-color-warning {
+    border-left: 3px solid $tmc-warning;
+}
+
+.ui-snackbar-container--border-color-attention {
+    border-left: 3px solid $tmc-attention;
 }
 </style>

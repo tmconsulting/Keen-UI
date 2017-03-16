@@ -347,56 +347,56 @@ $ui-calendar-padding    : rem-calc(8px) !default;
 
 .ui-calendar--color-primary {
     .ui-calendar__header {
-        background-color: $brand-primary-color;
+        background-color: $tmc-accent;
     }
 
     .ui-calendar__year {
         &:hover,
         body[modality="keyboard"] &:focus {
-            color: $brand-primary-color;
+            color: $tmc-accent;
         }
 
         &.is-selected {
-            color: $brand-primary-color;
+            color: $tmc-accent;
         }
     }
 
     .ui-calendar-week__date {
         &.is-today {
-            color: $brand-primary-color;
+            color: $tmc-accent;
         }
 
         &.is-selected,
         body[modality="keyboard"] &.is-selected {
-            background-color: $brand-primary-color;
+            background-color: $tmc-primary;
         }
     }
 }
 
 .ui-calendar--color-accent {
     .ui-calendar__header {
-        background-color: $brand-accent-color;
+        background-color: $tmc-accent;
     }
 
     .ui-calendar__year {
         &:hover,
         body[modality="keyboard"] &:focus {
-            color: $brand-accent-color;
+            color: $tmc-accent;
         }
 
         &.is-selected {
-            color: $brand-accent-color;
+            color: $tmc-accent;
         }
     }
 
     .ui-calendar-week__date {
         &.is-today {
-            color: $brand-accent-color;
+            color: $tmc-accent;
         }
 
         &.is-selected,
         body[modality="keyboard"] &.is-selected {
-            background-color: $brand-accent-color;
+            background-color: $tmc-accent;
         }
     }
 }

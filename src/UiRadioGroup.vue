@@ -170,13 +170,13 @@ export default {
 
     &:not(.is-disabled):not(.is-invalid):hover {
        .ui-radio-group__label-text {
-          color: $ui-input-label-color--hover;
+          color: $tmc-primary;
         }
     }
 
     &:not(.is-disabled):not(.is-invalid).is-active {
         .ui-radio-group__label-text {
-            color: $ui-input-label-color--active;
+            color: $tmc-links;
         }
     }
 
@@ -195,7 +195,7 @@ export default {
 
     &.is-invalid {
         .ui-radio-group__label-text {
-           color: $ui-input-border-color--invalid;
+           color: $tmc-invalid;
         }
 
         .ui-radio-group__feedback {
@@ -211,7 +211,7 @@ export default {
 }
 
 .ui-radio-group__label-text {
-    color: $ui-input-label-color;
+    color: $tmc-primary-text;
     font-size: $ui-input-label-font-size;
     line-height: $ui-input-label-line-height;
     transition: color 0.1s ease;

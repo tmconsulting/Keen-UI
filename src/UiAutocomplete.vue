@@ -413,23 +413,23 @@ export default {
 
     &:hover:not(.is-disabled) {
         .ui-autocomplete__label-text {
-            color: $ui-input-label-color--hover;
+            color: $tmc-primary-text;
         }
 
         .ui-autocomplete__input {
-            border-bottom-color: $ui-input-border-color--hover;
+            border-bottom-color: $tmc-primary-text;
         }
     }
 
     &.is-active:not(.is-disabled) {
         .ui-autocomplete__label-text,
         .ui-autocomplete__icon-wrapper .ui-icon {
-            color: $ui-input-label-color--active;
+            color: $tmc-accent;
         }
 
         .ui-autocomplete__input {
-            border-bottom-color: $ui-input-border-color--active;
-            border-bottom-width: $ui-input-border-width--active;
+            border-bottom-color: $tmc-accent;
+            border-bottom-width: $tmc-accent;
         }
     }
 
@@ -440,7 +440,7 @@ export default {
             display: table;
 
             &.is-inline {
-                color: $ui-input-label-color; // So the hover styles don't override it
+                color: $tmc-input; // So the hover styles don't override it
                 cursor: text;
                 transform: translateY($ui-input-label-top--inline) scale(1.1);
             }
@@ -464,15 +464,15 @@ export default {
     &.is-invalid:not(.is-disabled) {
         .ui-autocomplete__label-text,
         .ui-autocomplete__icon-wrapper .ui-icon {
-            color: $ui-input-label-color--invalid;
+            color: $tmc-invalid;
         }
 
         .ui-autocomplete__input {
-            border-bottom-color: $ui-input-border-color--invalid;
+            border-bottom-color: $tmc-invalid;
         }
 
         .ui-autocomplete__feedback {
-            color: $ui-input-feedback-color--invalid;
+            color: $tmc-invalid;
         }
     }
 
@@ -507,7 +507,7 @@ export default {
     padding-top: $ui-input-icon-margin-top;
 
     .ui-icon {
-        color: $ui-input-icon-color;
+        color: $tmc-secondary-text;
     }
 }
 
@@ -516,7 +516,7 @@ export default {
 }
 
 .ui-autocomplete__label-text {
-    color: $ui-input-label-color;
+    color: $tmc-secondary-text;
     font-size: $ui-input-label-font-size;
     line-height: $ui-input-label-line-height;
     margin-bottom: $ui-input-label-margin-bottom;
@@ -531,7 +531,7 @@ export default {
     border-bottom-style: solid;
     border-bottom-width: $ui-input-border-width;
     border-radius: 0;
-    color: $ui-input-text-color;
+    color: $tmc-primary-text;
     cursor: auto;
     font-family: $font-stack;
     font-size: $ui-input-text-font-size;
@@ -549,7 +549,7 @@ export default {
 }
 
 .ui-autocomplete__clear-button {
-    color: $ui-input-button-color;
+    color: $tmc-hint;
     cursor: pointer;
     font-size: $ui-input-button-size;
     position: absolute;
@@ -557,14 +557,14 @@ export default {
     top: $ui-input-button-margin-top;
 
     &:hover {
-        color: $ui-input-button-color--hover;
+        color: $tmc-accent;
     }
 }
 
 .ui-autocomplete__suggestions {
     background-color: white;
     box-shadow: 1px 2px 8px $md-grey-600;
-    color: $primary-text-color;
+    color: $tmc-primary-text;
     display: block;
     list-style-type: none;
     margin: 0;
@@ -576,7 +576,7 @@ export default {
 }
 
 .ui-autocomplete__feedback {
-    color: $ui-input-feedback-color;
+    color: $tmc-hint;
     font-size: $ui-input-feedback-font-size;
     line-height: $ui-input-feedback-line-height;
     margin: 0;

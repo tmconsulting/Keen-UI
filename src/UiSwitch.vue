@@ -186,11 +186,12 @@ $ui-switch-focus-ring-size  : $ui-switch-thumb-size * 2.1 !default;
 }
 
 .ui-switch__track {
-    background-color: rgba(black, 0.26);
-    border-radius: rem-calc(8px);
-    height: $ui-switch-track-height;
+    background-color: rgba(black, 0.1);
+    border-radius: $tmc-radius-50;
+    /*height: $ui-switch-track-height;*/
+    height:$ui-switch-thumb-size;
     position: absolute;
-    top: (($ui-switch-thumb-size - $ui-switch-track-height) / 2);
+    top:0;
     transition: background-color 0.1s linear;
     width: $ui-switch-track-width;
     z-index: -1;
@@ -199,7 +200,6 @@ $ui-switch-focus-ring-size  : $ui-switch-thumb-size * 2.1 !default;
 .ui-switch__thumb {
     background-color: $ui-switch-thumb-color;
     border-radius: 50%;
-    box-shadow: 0 1px 3px rgba(black, 0.4);
     height: $ui-switch-thumb-size;
     position: absolute;
     transition-duration: 0.2s;
@@ -247,15 +247,15 @@ $ui-switch-focus-ring-size  : $ui-switch-thumb-size * 2.1 !default;
 .ui-switch--color-primary {
     &.is-checked:not(.is-disabled) {
         .ui-switch__track {
-            background-color: rgba($brand-primary-color, 0.5);
+            background-color: rgba($tmc-primary, 0.5);
         }
 
         .ui-switch__thumb {
-            background-color: $brand-primary-color;
+            background-color: $tmc-primary;
         }
 
         .ui-switch__focus-ring {
-            background-color: rgba($brand-primary-color, 0.2);
+            background-color: rgba($tmc-primary, 0.2);
         }
     }
 }
@@ -263,15 +263,15 @@ $ui-switch-focus-ring-size  : $ui-switch-thumb-size * 2.1 !default;
 .ui-switch--color-accent {
     &.is-checked:not(.is-disabled) {
         .ui-switch__track {
-            background-color: rgba($brand-accent-color, 0.5);
+            background-color: rgba($tmc-accent, 0.5);
         }
 
         .ui-switch__thumb {
-            background-color: $brand-accent-color;
+            background-color: $tmc-accent;
         }
 
         .ui-switch__focus-ring {
-            background-color: rgba($brand-accent-color, 0.2);
+            background-color: rgba($tmc-accent, 0.2);
         }
     }
 }

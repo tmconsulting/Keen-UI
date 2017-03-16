@@ -314,15 +314,15 @@ $ui-icon-button--size-large     : rem-calc(48px) !default;
 }
 
 .ui-icon-button--color-black {
-    color: $secondary-text-color;
+    color: $tmc-secondary-text;
 
     .ui-icon-button__icon {
-        color: $secondary-text-color;
+        color: $tmc-secondary-text;
     }
 }
 
 .ui-icon-button--color-white {
-    color: $secondary-text-color;
+    color: $tmc-secondary-text;
 
     .ui-icon-button__icon {
         color: white;
@@ -335,15 +335,15 @@ $ui-icon-button--size-large     : rem-calc(48px) !default;
 
 .ui-icon-button--type-primary {
     &.ui-icon-button--color-default {
-        background-color: $md-grey-200;
+        background-color: $tmc-default;
 
         &:hover:not(.is-disabled),
         &.has-dropdown-open {
-            background-color: darken($md-grey-200, 7.5%);
+            background-color: darken($tmc-default, 7.5%);
         }
 
         .ui-icon-button__focus-ring {
-            background-color: darken($md-grey-200, 15%);
+            background-color: darken($tmc-default, 15%);
         }
 
         .ui-ripple-ink__ink {
@@ -351,7 +351,7 @@ $ui-icon-button--size-large     : rem-calc(48px) !default;
         }
 
         .ui-icon-button__icon  {
-            color: $primary-text-color;
+            color: $tmc-primary;
         }
     }
 
@@ -368,28 +368,28 @@ $ui-icon-button--size-large     : rem-calc(48px) !default;
     }
 
     &.ui-icon-button--color-primary {
-        background-color: $brand-primary-color;
+        background-color: $tmc-primary;
 
         &:hover:not(.is-disabled),
         &.has-dropdown-open {
-            background-color: darken($brand-primary-color, 10%);
+            background-color: darken($tmc-primary, 10%);
         }
 
         .ui-icon-button__focus-ring {
-            background-color: darken($brand-primary-color, 15%);
+            background-color: darken($tmc-primary, 15%);
         }
     }
 
     &.ui-icon-button--color-accent {
-        background-color: $brand-accent-color;
+        background-color: $tmc-accent;
 
         &:hover:not(.is-disabled),
         &.has-dropdown-open {
-            background-color: darken($brand-accent-color, 10%);
+            background-color: darken($tmc-accent, 10%);
         }
 
         .ui-icon-button__focus-ring {
-            background-color: darken($brand-accent-color, 15%);
+            background-color: darken($tmc-accent, 15%);
         }
     }
 
@@ -407,38 +407,38 @@ $ui-icon-button--size-large     : rem-calc(48px) !default;
     }
 
     &.ui-icon-button--color-orange {
-        background-color: $md-orange;
+        background-color: $tmc-attention;
 
         &:hover:not(.is-disabled),
         &.has-dropdown-open {
-            background-color: darken($md-orange, 10%);
+            background-color: darken($tmc-attention, 10%);
         }
 
         .ui-icon-button__focus-ring {
-            background-color: darken($md-orange, 15%);
+            background-color: darken($tmc-attention, 15%);
         }
     }
 
     &.ui-icon-button--color-red {
-        background-color: $md-red;
+        background-color: $tmc-invalid;
 
         &:hover:not(.is-disabled),
         &.has-dropdown-open {
-            background-color: darken($md-red, 10%);
+            background-color: darken($tmc-invalid, 10%);
         }
 
         .ui-icon-button__focus-ring {
-            background-color: darken($md-red, 15%);
+            background-color: darken($tmc-invalid, 15%);
         }
     }
 }
 
 .ui-icon-button--type-secondary {
     &.ui-icon-button--color-default {
-        color: $primary-text-color;
+        color: $tmc-primary;
 
         .ui-icon-button__icon {
-            color: $primary-text-color;
+            color: $tmc-primary;
         }
     }
 
@@ -450,27 +450,27 @@ $ui-icon-button--size-large     : rem-calc(48px) !default;
     &.ui-icon-button--color-red {
         &:hover:not(.is-disabled),
         &.has-dropdown-open {
-            background-color: rgba(black, 0.1);
+            background-color: darken($tmc-primary, 15%);
         }
 
         .ui-icon-button__focus-ring {
-            background-color: rgba(black, 0.15);
+            background-color: darken($tmc-primary, 15%);
         }
     }
 
     &.ui-icon-button--color-primary {
-        color: $brand-primary-color;
+        color: $tmc-primary;
 
         .ui-icon-button__icon {
-            color: $brand-primary-color;
+            color: $tmc-primary;
         }
     }
 
     &.ui-icon-button--color-accent {
-        color: $brand-accent-color;
+        color: $tmc-accent;
 
         .ui-icon-button__icon {
-            color: $brand-accent-color;
+            color: $tmc-accent;
         }
     }
 
@@ -483,18 +483,18 @@ $ui-icon-button--size-large     : rem-calc(48px) !default;
     }
 
     &.ui-icon-button--color-orange {
-        color: $md-orange;
+        color: $tmc-attention;
 
         .ui-icon-button__icon {
-            color: $md-orange;
+            color: $tmc-attention;
         }
     }
 
     &.ui-icon-button--color-red {
-        color: $md-red;
+        color: $tmc-invalid;
 
         .ui-icon-button__icon {
-            color: $md-red;
+            color: $tmc-invalid;
         }
     }
 }

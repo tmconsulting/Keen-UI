@@ -179,7 +179,7 @@ $ui-collapsible-header-background-hover     : $md-grey-300 !default;
         .ui-collapsible__header {
             &:hover,
             body[modality="keyboard"] &:focus {
-                background-color: $ui-collapsible-header-background-hover;
+                background-color: darken($tmc-default, 10%);
             }
         }
     }
@@ -204,7 +204,7 @@ $ui-collapsible-header-background-hover     : $md-grey-300 !default;
 
 .ui-collapsible__header {
     align-items: center;
-    background-color: $ui-collapsible-header-background;
+    background-color: $tmc-default;
     cursor: pointer;
     display: flex;
     font-size: rem-calc(15px);
@@ -226,7 +226,7 @@ $ui-collapsible-header-background-hover     : $md-grey-300 !default;
 }
 
 .ui-collapsible__header-icon {
-    color: $secondary-text-color;
+    color: $tmc-secondary-text;
     cursor: pointer;
     margin-left: auto;
     margin-right: rem-calc(-4px);

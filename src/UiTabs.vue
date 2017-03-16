@@ -416,13 +416,13 @@ export default {
 
 .ui-tabs--background-color-primary {
     .ui-tabs__header {
-        background-color: $brand-primary-color;
+        background-color: $tmc-primary;
     }
 }
 
 .ui-tabs--background-color-accent {
     .ui-tabs__header {
-        background-color: $brand-accent-color;
+        background-color: $tmc-accent;
     }
 }
 
@@ -476,20 +476,20 @@ export default {
 
 .ui-tabs--text-color-active-primary {
     .ui-tab-header-item.is-active {
-        color: $brand-primary-color;
+        color: $tmc-primary;
 
         .ui-tab-header-item__icon {
-            color: $brand-primary-color;
+            color: $tmc-primary;
         }
     }
 }
 
 .ui-tabs--text-color-active-accent {
     .ui-tab-header-item.is-active {
-        color: $brand-accent-color;
+        color: $tmc-accent;
 
         .ui-tab-header-item__icon {
-            color: $brand-accent-color;
+            color: $tmc-accent;
         }
     }
 }
@@ -500,13 +500,13 @@ export default {
 
 .ui-tabs--indicator-color-primary {
     .ui-tabs__active-tab-indicator {
-        background-color: $brand-primary-color;
+        background-color: $tmc-primary;
     }
 }
 
 .ui-tabs--indicator-color-accent {
     .ui-tabs__active-tab-indicator {
-        background-color: $brand-accent-color;
+        background-color: $tmc-accent;
     }
 }
 

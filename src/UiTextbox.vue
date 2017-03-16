@@ -333,25 +333,25 @@ export default {
 
     &:hover:not(.is-disabled) {
         .ui-textbox__label-text {
-            color: $ui-input-label-color--hover;
+            color: $tmc-primary-text;
         }
 
         .ui-textbox__input,
         .ui-textbox__textarea {
-            border-bottom-color: $ui-input-border-color--hover;
+            border-bottom-color: $tmc-primary-text;
         }
     }
 
     &.is-active:not(.is-disabled) {
         .ui-textbox__input,
         .ui-textbox__textarea {
-            border-bottom-color: $ui-input-border-color--active;
+            border-bottom-color: $tmc-accent;
             border-bottom-width: $ui-input-border-width--active;
         }
 
         .ui-textbox__label-text,
         .ui-textbox__icon-wrapper .ui-icon {
-            color: $ui-input-label-color--active;
+            color: $tmc-accent;
         }
     }
 
@@ -389,16 +389,16 @@ export default {
         .ui-textbox__label-text,
         .ui-textbox__icon-wrapper .ui-icon,
         .ui-textbox__counter {
-            color: $ui-input-label-color--invalid;
+            color: $tmc-invalid;
         }
 
         .ui-textbox__input,
         .ui-textbox__textarea {
-            border-bottom-color: $ui-input-border-color--invalid;
+            border-bottom-color: $tmc-invalid;
         }
 
         .ui-textbox__feedback {
-            color: $ui-input-feedback-color--invalid;
+            color: $tmc-invalid;
         }
     }
 

@@ -176,18 +176,18 @@ $ui-progress-linear-height : rem-calc(4px) !default;
 // ================================================
 
 .ui-progress-linear--color-primary {
-    background-color: rgba($brand-primary-color, 0.4);
+    background-color: rgba($tmc-primary, 0.4);
 
     .ui-progress-linear__progress-bar {
-        background-color: $brand-primary-color;
+        background-color: $tmc-primary;
     }
 }
 
 .ui-progress-linear--color-accent {
-    background-color: rgba($brand-accent-color, 0.4);
+    background-color: rgba($tmc-accent, 0.4);
 
     .ui-progress-linear__progress-bar {
-        background-color: $brand-accent-color;
+        background-color: $tmc-accent;
     }
 }
 

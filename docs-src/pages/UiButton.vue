@@ -1,24 +1,18 @@
 <template>
     <section class="page page--ui-button">
-        <h2 class="page__title">UiButton</h2>
+        <h2 class="page__title">TMC Кнопки</h2>
 
-        <p>UiButton is a button component that can show a dropdown and a loading spinner. It also supports focus (mouse and keyboard separately), hover and disabled states.</p>
-
-        <p>UiButton has two types:</p>
+        <p>Типы кнопок:</p>
 
         <ul>
-            <li><b>Primary</b>: more prominent, has a background color, with white or black text color.</li>
-            <li><b>Secondary</b>: less prominent, has no background, text color is the button color.</li>
+            <li><b>Фирменый синий</b>:</li>
+            <li><b>Фирменый зеленый</b>: </li>
         </ul>
 
-        <p>Additionally, UiButton can be raised to show a box-shadow.</p>
-
-        <p>Supported colors are <code>primary</code>, <code>accent</code>, <code>green</code>, <code>orange</code> and <code>red</code>, in addition to the default gray.</p>
-
-        <p><b>Note:</b> If you are having alignment issues when using multiple buttons next to each other, put the buttons in a container and add a class of <code>ui-button-group</code> for a flex-based workaround.</p>
+        <p>А так же есть обычный стандартный цвет</p>
 
         <h3 class="page__section-title">
-            Examples <a href="https://github.com/JosephusPaye/Keen-UI/blob/master/docs-src/pages/UiButton.vue" target="_blank" rel="noopener">View Source</a>
+            Примеры <a href="https://github.com/JosephusPaye/Keen-UI/blob/master/docs-src/pages/UiButton.vue" target="_blank" rel="noopener">View Source</a>
         </h3>
 
         <div class="page__examples">
@@ -26,16 +20,16 @@
                 name="size"
                 :options="['small', 'normal', 'large']"
                 v-model="size"
-            >Button Size</ui-radio-group>
+            >Размеры кнопок</ui-radio-group>
 
             <ui-radio-group
                 name="icon_position"
                 :options="['left', 'right']"
                 v-model="iconPosition"
-            >Icon Position</ui-radio-group>
+            >Выравнивание иконки</ui-radio-group>
 
             <ui-switch v-model="loading">
-                Loading: <code>{{ loading ? 'true' : 'false' }}</code>
+                Загрузка: <code>{{ loading ? 'on' : 'off' }}</code>
             </ui-switch>
 
             <div class="table-responsive">
@@ -43,121 +37,64 @@
                     <tbody>
                         <tr>
                             <th></th>
-                            <th>Type: primary</th>
-                            <th>Type: secondary</th>
+                            <th>Тип: первостепенные</th>
+                            <th>Тип: второстепенные</th>
                         </tr>
 
                         <tr>
-                            <th>Color: default</th>
+                            <th>Цвет: Обычный</th>
                             <td>
-                                <ui-button :size="size">Normal</ui-button>
-                                <ui-button raised :size="size">Raised</ui-button>
-                                <ui-button :loading="loading" :size="size">Loading</ui-button>
-                                <ui-button disabled :size="size">Disabled</ui-button>
-                                <ui-button icon="refresh" :icon-position="iconPosition" :size="size">With Icon</ui-button>
+                                <ui-button :size="size">Нормальная</ui-button>
+                                <ui-button raised :size="size">Приподнятая</ui-button>
+                                <ui-button :loading="loading" :size="size">Загрузка</ui-button>
+                                <ui-button disabled :size="size">Недоступно</ui-button>
+                                <ui-button icon="refresh" :icon-position="iconPosition" :size="size">С иконкой</ui-button>
                             </td>
 
                             <td>
-                                <ui-button :size="size" type="secondary">Normal</ui-button>
-                                <ui-button raised :size="size" type="secondary">Raised</ui-button>
-                                <ui-button :loading="loading" :size="size" type="secondary">Loading</ui-button>
-                                <ui-button disabled :size="size" type="secondary">Disabled</ui-button>
-                                <ui-button icon="refresh" :icon-position="iconPosition" :size="size" type="secondary">With Icon</ui-button>
+                                <ui-button :size="size" type="secondary">Нормальная</ui-button>
+                                <ui-button raised :size="size" type="secondary">Приподнятая</ui-button>
+                                <ui-button :loading="loading" :size="size" type="secondary">Загрузка</ui-button>
+                                <ui-button disabled :size="size" type="secondary">Недоступно</ui-button>
+                                <ui-button icon="refresh" :icon-position="iconPosition" :size="size" type="secondary">С иконкой</ui-button>
                             </td>
                         </tr>
 
                         <tr>
-                            <th>Color: primary</th>
+                            <th>Color: Фирменный синий</th>
                             <td>
-                                <ui-button color="primary" :size="size">Normal</ui-button>
-                                <ui-button color="primary" raised :size="size">Raised</ui-button>
-                                <ui-button color="primary" :loading="loading" :size="size">Loading</ui-button>
-                                <ui-button color="primary" disabled :size="size">Disabled</ui-button>
+                                <ui-button color="primary" :size="size">Нормальная</ui-button>
+                                <ui-button color="primary" raised :size="size">Приподнятая</ui-button>
+                                <ui-button color="primary" :loading="loading" :size="size">Загрузка</ui-button>
+                                <ui-button color="primary" disabled :size="size">Недоступно</ui-button>
                                 <ui-button color="primary" icon="add" :icon-position="iconPosition" :size="size">With Icon</ui-button>
                             </td>
 
                             <td>
-                                <ui-button color="primary" :size="size" type="secondary">Normal</ui-button>
-                                <ui-button color="primary" raised :size="size" type="secondary">Raised</ui-button>
-                                <ui-button color="primary" :loading="loading" :size="size" type="secondary">Loading</ui-button>
-                                <ui-button color="primary" disabled :size="size" type="secondary">Disabled</ui-button>
-                                <ui-button color="primary" icon="add" :icon-position="iconPosition" :size="size" type="secondary">With Icon</ui-button>
+                                <ui-button color="primary" :size="size" type="secondary">Нормальная</ui-button>
+                                <ui-button color="primary" raised :size="size" type="secondary">Приподнятая</ui-button>
+                                <ui-button color="primary" :loading="loading" :size="size" type="secondary">Загрузка</ui-button>
+                                <ui-button color="primary" disabled :size="size" type="secondary">Недоступно</ui-button>
+                                <ui-button color="primary" icon="add" :icon-position="iconPosition" :size="size" type="secondary">С иконкой</ui-button>
                             </td>
                         </tr>
 
                         <tr>
-                            <th>Color: accent</th>
+                            <th>Color: Фирменный зеленый</th>
                             <td>
-                                <ui-button color="accent" :size="size">Normal</ui-button>
-                                <ui-button color="accent" raised :size="size">Raised</ui-button>
-                                <ui-button color="accent" :loading="loading" :size="size">Loading</ui-button>
-                                <ui-button color="accent" disabled :size="size">Disabled</ui-button>
-                                <ui-button color="accent" icon="add" :icon-position="iconPosition" :size="size">With Icon</ui-button>
+                                <ui-button color="accent" :size="size">Нормальная</ui-button>
+                                <ui-button color="accent" raised :size="size">Приподнятая</ui-button>
+                                <ui-button color="accent" :loading="loading" :size="size">Загрузка</ui-button>
+                                <ui-button color="accent" disabled :size="size">Недоступно</ui-button>
+                                <ui-button color="accent" icon="add" :icon-position="iconPosition" :size="size">С иконкой</ui-button>
                             </td>
 
                             <td>
-                                <ui-button color="accent" :size="size" type="secondary">Normal</ui-button>
-                                <ui-button color="accent" raised :size="size" type="secondary">Raised</ui-button>
-                                <ui-button color="accent" :loading="loading" :size="size" type="secondary">Loading</ui-button>
-                                <ui-button color="accent" disabled :size="size" type="secondary">Disabled</ui-button>
-                                <ui-button color="accent" icon="add" :icon-position="iconPosition" :size="size" type="secondary">With Icon</ui-button>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <th>Color: green</th>
-                            <td>
-                                <ui-button color="green" :size="size">Normal</ui-button>
-                                <ui-button color="green" raised :size="size">Raised</ui-button>
-                                <ui-button color="green" :loading="loading" :size="size">Loading</ui-button>
-                                <ui-button color="green" disabled :size="size">Disabled</ui-button>
-                                <ui-button color="green" icon="file_download" :icon-position="iconPosition" :size="size">With Icon</ui-button>
-                            </td>
-
-                            <td>
-                                <ui-button color="green" :size="size" type="secondary">Normal</ui-button>
-                                <ui-button color="green" raised :size="size" type="secondary">Raised</ui-button>
-                                <ui-button color="green" :loading="loading" :size="size" type="secondary">Loading</ui-button>
-                                <ui-button color="green" disabled :size="size" type="secondary">Disabled</ui-button>
-                                <ui-button color="green" icon="file_download" :icon-position="iconPosition" :size="size" type="secondary">With Icon</ui-button>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <th>Color: orange</th>
-                            <td>
-                                <ui-button color="orange" :size="size">Normal</ui-button>
-                                <ui-button color="orange" raised :size="size">Raised</ui-button>
-                                <ui-button color="orange" :loading="loading" :size="size">Loading</ui-button>
-                                <ui-button color="orange" disabled :size="size">Disabled</ui-button>
-                                <ui-button color="orange" icon="file_download" :icon-position="iconPosition" :size="size">With Icon</ui-button>
-                            </td>
-
-                            <td>
-                                <ui-button color="orange" :size="size" type="secondary">Normal</ui-button>
-                                <ui-button color="orange" raised :size="size" type="secondary">Raised</ui-button>
-                                <ui-button color="orange" :loading="loading" :size="size" type="secondary">Loading</ui-button>
-                                <ui-button color="orange" disabled :size="size" type="secondary">Disabled</ui-button>
-                                <ui-button color="orange" icon="file_download" :icon-position="iconPosition" :size="size" type="secondary">With Icon</ui-button>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <th>Color: red</th>
-                            <td>
-                                <ui-button color="red" :size="size">Normal</ui-button>
-                                <ui-button color="red" raised :size="size">Raised</ui-button>
-                                <ui-button color="red" :loading="loading" :size="size">Loading</ui-button>
-                                <ui-button color="red" disabled :size="size">Disabled</ui-button>
-                                <ui-button color="red" icon="delete" :icon-position="iconPosition" :size="size">With Icon</ui-button>
-                            </td>
-
-                            <td>
-                                <ui-button color="red" :size="size" type="secondary">Normal</ui-button>
-                                <ui-button color="red" raised :size="size" type="secondary">Raised</ui-button>
-                                <ui-button color="red" :loading="loading" :size="size" type="secondary">Loading</ui-button>
-                                <ui-button color="red" disabled :size="size" type="secondary">Disabled</ui-button>
-                                <ui-button color="red" icon="delete" :icon-position="iconPosition" :size="size" type="secondary">With Icon</ui-button>
+                                <ui-button color="accent" :size="size" type="secondary">Нормальная</ui-button>
+                                <ui-button color="accent" raised :size="size" type="secondary">Приподнятая</ui-button>
+                                <ui-button color="accent" :loading="loading" :size="size" type="secondary">Загрузка</ui-button>
+                                <ui-button color="accent" disabled :size="size" type="secondary">Недоступно</ui-button>
+                                <ui-button color="accent" icon="add" :icon-position="iconPosition" :size="size" type="secondary">С иконкой</ui-button>
                             </td>
                         </tr>
                     </tbody>
@@ -166,7 +103,7 @@
         </div>
 
         <div class="page__demo">
-            <h4 class="page__demo-title">Has dropdown, with menu</h4>
+            <h4 class="page__demo-title">Выпадающий список с пунктами меню</h4>
 
             <div class="page__demo-group">
                 <ui-button color="primary" has-dropdown ref="dropdownButton" :size="size">
@@ -180,20 +117,64 @@
 
                         @close="$refs.dropdownButton.closeDropdown()"
                     ></ui-menu>
-                    Click for Menu
+                    Нажми для просмотра
                 </ui-button>
             </div>
 
-            <h4 class="page__demo-title">Has dropdown, custom content</h4>
+            <h4 class="page__demo-title">Кастомизированный с текстом</h4>
 
             <div class="page__demo-group">
                 <ui-button has-dropdown :size="size">
                     <div class="custom-popover-content" slot="dropdown">
-                        <p><b>Hey</b> there!</p>
-                        <p>Button dropdowns can have any content, not just menus.</p>
+                        <p><b>Привет</b> всем!</p>
+                        <p>Здесь может быть не только текст и выпадающие списки, но и кнопки.</p>
                     </div>
 
-                    Click for custom dropdown
+                    Нажми для просмотра
+                </ui-button>
+            </div>
+
+            <h4 class="page__demo-title">Выпадашка с брендом</h4>
+
+            <div class="page__demo-group">
+                <ui-button has-dropdown :size="size" type="default">
+                    <div class="tmc-brand-popover" slot="dropdown">
+                       <div class="tmc-mainbrand">
+                           <a href="/"><img class="tmc-mainbrand__photo" :src="image.logo" alt="">Travel Management Cansalting</a>
+                           <div><ui-icon-button has-dropdown icon="more_vert" :size="size" color="white">
+                               <div class="tmc-brand-popover" slot="dropdown">
+                                   <ul class="tmc-mainbrand__links">
+                                       <li><a href="/">Сменить компанию</a></li>
+                                       <li><a href="/">Настройки</a></li>
+                                   </ul>
+                               </div>
+                           </ui-icon-button></div>
+                       </div>
+                       <ul class="tmc-mainbrand__links">
+                           <li><a href="/">Офисы</a></li>
+                           <li><a href="/">Менеджеры</a></li>
+                           <li><a href="/">Приложения</a></li>
+                       </ul>
+                        <div class="tmc-mainbrand__manager">
+                            <a class="tmc-mainbrand__manager-face" href="/">
+                                <img class="tmc-mainbrand__photo" :src="image.manager" alt="">
+                                <span class="tmc-mainbrand__manager-name">
+                                <p>Mariya Pelota</p>
+                                <p class="tmc-mainbrand__manager-position">Passive Enginer</p>
+                            </span>
+                            </a>
+                            <ui-icon-button has-dropdown icon="mail_outline" :size="size" color="black">
+                                <div class="tmc-brand-popover" slot="dropdown">
+                                    <ul class="tmc-mainbrand__links">
+                                        <li><a href="/">Отправить письмо</a></li>
+                                        <li><a href="/">Оставить сообщение</a></li>
+                                    </ul>
+                                </div>
+                            </ui-icon-button>
+                        </div>
+
+                    </div>
+                    Travel Management Consulting
                 </ui-button>
             </div>
         </div>
@@ -451,6 +432,7 @@
 
 <script>
 import UiButton from 'src/UiButton.vue';
+import UiIconButton from 'src/UiIconButton.vue';
 import UiMenu from 'src/UiMenu.vue';
 import UiRadioGroup from 'src/UiRadioGroup.vue';
 import UiSwitch from 'src/UiSwitch.vue';
@@ -491,6 +473,10 @@ const menuOptions = [
 export default {
     data() {
         return {
+            image: {
+                logo: 'img/Logo.png',
+                manager: 'img/ManagerPhoto.png'
+            },
             size: 'normal',
             iconPosition: 'left',
             loading: true,
@@ -500,6 +486,7 @@ export default {
 
     components: {
         UiButton,
+        UiIconButton,
         UiMenu,
         UiRadioGroup,
         UiSwitch,
@@ -558,6 +545,95 @@ export default {
 
     p:last-child {
         margin-bottom: 0;
+    }
+}
+.tmc-brand-popover{
+    max-width: rem-calc(360px);
+    font-family: $font-stack;
+
+    min-width: rem-calc(168px);
+    outline: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+p:first-child {
+    margin-top: 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+}
+.tmc-mainbrand{
+    @include flexbox();
+    justify-content: space-between;
+    padding: rem-calc(25px 20px);
+    background: $tmc-accent;
+    margin:0;
+    a{
+        @include flexbox();
+        justify-content:space-between;
+        align-items:center;
+        color:$md-white;
+        &:hover{
+            opacity:0.8;
+         }
+        margin:0 10px 0 0;
+    }
+    img{
+        margin:0 10px 0 0;
+    }
+}
+.tmc-mainbrand__links{
+    height: 100%;
+    list-style: none;
+    margin:0;
+    padding:0;
+    li{
+
+        a{
+            padding:16px 20px;
+            display: block;
+            color:$tmc-primary;
+            &:hover{
+                background: $tmc-default;
+                color:$tmc-links;
+             }
+        }
+    }
+}
+.tmc-mainbrand__photo{
+    height: 34px;
+    width: 34px;
+    border-radius: $tmc-radius-50;
+    margin: 0 10px 0 0;
+}
+.tmc-mainbrand__manager{
+    @include flexbox();
+    justify-content:space-between;
+    align-items:center;
+    border-top:1px solid $tmc-default;
+    padding: rem-calc(25px 20px);
+    margin:0;
+}
+.tmc-mainbrand__manager-face{
+    @include flexbox();
+    align-items:center;
+    flex-direction: row;
+}
+.tmc-mainbrand__manager-name{
+    @include flexbox();
+    flex-direction: column;
+    color:$tmc-primary;
+    &:hover{
+    color:$tmc-links;
+     }
+    p{
+        padding: 0;
+        margin: 0;
+    }
+    .tmc-mainbrand__manager-position{
+        font-size: 13px;
     }
 }
 </style>

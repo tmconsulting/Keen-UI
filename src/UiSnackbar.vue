@@ -77,20 +77,21 @@ $ui-snackbar-background-color   : #323232 !default;
 $ui-snackbar-font-size          : rem-calc(14px) !default;
 
 .ui-snackbar {
+    justify-content: space-around;
     align-items: center;
-    background-color: $ui-snackbar-background-color;
+    background-color: $tmc-white;
     border-radius: $ui-default-border-radius;
-    box-shadow: 0 1px 3px rgba(black, 0.12), 0 1px 2px rgba(black, 0.24);
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.15);
     display: inline-flex;
     font-family: $font-stack;
     max-width: rem-calc(568px);
-    min-height: rem-calc(48px);
+    min-height: rem-calc(2em);
     min-width: rem-calc(288px);
     padding: rem-calc(14px 24px);
 }
 
 .ui-snackbar__message {
-    color: white;
+    color: $tmc-primary;
     cursor: default;
     font-size: $ui-snackbar-font-size;
     line-height: 1.5;

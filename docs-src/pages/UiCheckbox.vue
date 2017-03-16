@@ -1,6 +1,6 @@
 <template>
     <section class="page page--ui-checckbox">
-        <h2 class="page__title">UiCheckbox</h2>
+        <h2 class="page__title">Чекбоксы</h2>
 
         <p>UiCheckbox shows a checkbox. It supports keyboard focus, hover and disabled states. The position of the checkbox relative to the label can be changed.</p>
 
@@ -9,11 +9,11 @@
         <p>To connect multiple checkboxes to a single array of values, use <a href="#/ui-checkbox-group">UiCheckboxGroup</a>.</p>
 
         <h3 class="page__section-title">
-            Examples <a href="https://github.com/JosephusPaye/Keen-UI/blob/master/docs-src/components/ui-checkbox/UiCheckboxDocs.vue" target="_blank" rel="noopener">View Source</a>
+            Примеры <a href="https://github.com/JosephusPaye/Keen-UI/blob/master/docs-src/components/ui-checkbox/UiCheckboxDocs.vue" target="_blank" rel="noopener">View Source</a>
         </h3>
 
         <div class="page__examples">
-            <h4 class="page__demo-title">Basic</h4>
+            <h4 class="page__demo-title">Базовые</h4>
 
             <div class="page__demo-group">
                 <ui-checkbox v-model="check1">Do it now</ui-checkbox>
@@ -23,7 +23,7 @@
                 <ui-checkbox v-model="check4" disabled>Can't change this too</ui-checkbox>
             </div>
 
-            <h4 class="page__demo-title">Color: accent</h4>
+            <h4 class="page__demo-title">Цвет: Акцентный</h4>
 
             <div class="page__demo-group">
                 <ui-checkbox v-model="check1" color="accent">Do it now</ui-checkbox>
@@ -43,7 +43,7 @@
                 <ui-checkbox v-model="check4" box-position="right" disabled>Can't change this too</ui-checkbox>
             </div>
 
-            <h4 class="page__demo-title">HTML in Label</h4>
+            <h4 class="page__demo-title">HTML в Label</h4>
 
             <div class="page__demo-group">
                 <ui-checkbox v-model="check5">Just <b><i>do</i></b> it!</ui-checkbox>

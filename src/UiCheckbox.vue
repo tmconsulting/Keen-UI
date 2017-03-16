@@ -188,7 +188,7 @@ $ui-checkbox-focus-ring-size        : $ui-checkbox-size * 2.1;
 
     // Background
     &::before {
-        border-radius: $ui-default-border-radius;
+        border-radius: $tmc-radius-50;
         border: $ui-checkbox-border-width solid $hint-text-color;
         box-sizing: border-box;
         content: "";
@@ -207,7 +207,7 @@ $ui-checkbox-focus-ring-size        : $ui-checkbox-size * 2.1;
         box-sizing: border-box;
         content: "";
         display: block;
-        height: rem-calc(13px);
+        height: rem-calc(12px);
         left: rem-calc(7px);
         opacity: 0;
         position: absolute;
@@ -265,19 +265,19 @@ $ui-checkbox-focus-ring-size        : $ui-checkbox-size * 2.1;
     &:not(.is-disabled).is-checked:hover,
     &:not(.is-disabled).is-checked.is-active {
         .ui-checkbox__checkmark::before {
-            background-color: darken($brand-primary-color, 5%);
-            border-color: darken($brand-primary-color, 5%);
+            background-color: darken($tmc-primary, 5%);
+            border-color: darken($tmc-primary, 5%);
         }
     }
 
     &.is-checked {
         .ui-checkbox__checkmark::before {
-            background-color: $brand-primary-color;
-            border-color: $brand-primary-color;
+            background-color: $tmc-primary;
+            border-color: $tmc-primary;
         }
 
         .ui-checkbox__focus-ring {
-            background-color: rgba($brand-primary-color, 0.18);
+            background-color: rgba($tmc-primary, 0.18);
         }
     }
 }
@@ -286,19 +286,19 @@ $ui-checkbox-focus-ring-size        : $ui-checkbox-size * 2.1;
     &:not(.is-disabled).is-checked:hover,
     &:not(.is-disabled).is-checked.is-active {
         .ui-checkbox__checkmark::before {
-            background-color: darken($brand-accent-color, 5%);
-            border-color: darken($brand-accent-color, 5%);
+            background-color: darken($tmc-accent, 5%);
+            border-color: darken($tmc-accent, 5%);
         }
     }
 
     &.is-checked {
         .ui-checkbox__checkmark::before {
-            background-color: $brand-accent-color;
-            border-color: $brand-accent-color;
+            background-color: $tmc-accent;
+            border-color: $tmc-accent;
         }
 
         .ui-checkbox__focus-ring {
-            background-color: rgba($brand-accent-color, 0.18);
+            background-color: rgba($tmc-accent, 0.18);
         }
     }
 }
