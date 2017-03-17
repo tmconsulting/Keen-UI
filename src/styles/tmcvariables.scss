@@ -1,0 +1,33 @@
+a:focus, a:hover {
+  text-decoration: none;
+}
+
+$font-stack: DINPro,sans-serif;
+
+$tmc-accent-light:   #5AE454;
+$tmc-accent:         #1A905A;
+$tmc-links:          #0B9FAB;
+$tmc-primary:        #203658;
+$tmc-primary-text:   #3D4B65;
+$tmc-secondary-text: #626D84;
+$tmc-hint:           #8B92A3;
+$tmc-input:          #B9BEC8;
+$tmc-default:        #F1F2F3;
+$tmc-white:          #FFFFFF;
+$tmc-invalid:        #E35050;
+$tmc-warning:        #FFD129;
+$tmc-attention:      #FF811B;
+
+$ui-button-font-size:         rem-calc(13px);
+$ui-button-font-size--small:  rem-calc(13px);
+$ui-icon-font-size  :         rem-calc(20px);
+
+$tmc-radius-50: 50px;
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
